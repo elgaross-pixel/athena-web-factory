@@ -1,29 +1,38 @@
 # Athena Web Factory
 
-Reusable Git-native starter for building independent web assets.
+Reusable Git-native technical core for building independent web assets.
 
 ## Status
 
-**v0.1 starter under construction.** This repository is not a production website and is deliberately non-indexable by default.
+**v0.2 hardening candidate.** This repository is not a production website and is deliberately non-indexable by default.
 
-## Design boundary
+## Boundary
 
-The factory provides reusable technical infrastructure only. Brand identity, editorial identity, content, domain, navigation, and commercial configuration belong to each site and must not be cloned from SelectVerdict or another asset.
+The factory owns reusable technical infrastructure. Each child asset owns its domain, brand, editorial identity, content model, navigation, commercial configuration, analytics property, Search Console property, and production repository.
+
+SelectVerdict remains an independent reference asset; it is not a parent template and is not modified by factory development.
 
 ## Safety defaults
 
 - placeholder URL: `https://example.invalid`
+- status: `planned`
 - `indexable: false`
-- `robots.txt` blocks crawling until an asset is explicitly approved
-- affiliate links require a tracking event id
-- QA rejects known SelectVerdict/vendor identity leakage
-- the publication journal is append-only by operating policy
+- robots blocks crawling before explicit release
+- affiliate links require an event id
+- provider-neutral tracking event layer
+- source QA rejects known reference/vendor leakage
+- rendered-output QA checks metadata, canonical, robots, sitemap, placeholders, and internal links
+- publication journal uses registered event types and correction events rather than history rewriting
 
 ## Commands
 
 - `npm run build`
 - `npm run qa`
+- `npm run qa:production`
 - `npm run journal:check`
 - `npm run scaffold:check`
+- `npm run new-site -- --out ../child-repo --asset-id WF-A003`
 
-No domain, deployment, analytics account, Search Console property, or affiliate program is assigned to the starter.
+The scaffolder refuses to overwrite an existing directory and generates children in planned/non-indexable state.
+
+No domain, production deployment, analytics property, Search Console property, vertical, or affiliate program is assigned to the factory starter.
