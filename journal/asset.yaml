@@ -1,0 +1,18 @@
+asset_id: WF-A002
+name: UNKNOWN
+domain: UNKNOWN
+vertical: UNKNOWN
+status: planned
+created_at: 2026-09-08T00:00:00Z
+
+infrastructure:
+  framework: astro
+  hosting: unknown
+  source_of_truth: git
+
+measurement:
+  analytics_provider: none
+  gsc_verified: false
+
+commercial:
+  affiliate_programs: []
