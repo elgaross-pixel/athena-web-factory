@@ -2,8 +2,10 @@
   "name": "athena-web-factory",
   "private": true,
   "type": "module",
-  "version": "0.2.0",
-  "engines": { "node": ">=22.12.0" },
+  "version": "0.2.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -12,7 +14,8 @@
     "qa:production": "node scripts/production-qa.mjs",
     "journal:check": "node scripts/journal.mjs --check",
     "scaffold:check": "node scripts/scaffold-check.mjs",
-    "new-site": "node scripts/new-site.mjs"
+    "new-site": "node scripts/new-site.mjs",
+    "acceptance": "node scripts/acceptance.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
