@@ -24,7 +24,7 @@ const canonicalUrl = new URL(canonical, Astro.site);
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalUrl} />
 <link rel="sitemap" href="/sitemap-index.xml" />
-{noindex && <meta name="robots" content="noindex, follow" />}
+<meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content={siteConfig.site.name} />
 <meta property="og:title" content={fullTitle} />
