@@ -11,9 +11,11 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - run: npm install
+          cache: npm
+      - run: npm ci
       - run: npm run build
       - run: npm run qa
       - run: npm run qa:production
       - run: npm run journal:check
       - run: npm run scaffold:check
+      - run: npm run acceptance
