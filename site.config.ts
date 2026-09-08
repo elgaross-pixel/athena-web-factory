@@ -1,5 +1,5 @@
 export const siteConfig = {
-  asset: { id: 'WF-A002', status: 'planned' as const },
+  asset: { id: 'WF-CORE', status: 'planned' as const },
   site: {
     name: 'TBD',
     domain: 'TBD',
