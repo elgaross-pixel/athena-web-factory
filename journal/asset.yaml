@@ -1,10 +1,10 @@
 schema_version: 1
-asset_id: WF-A002
-name: UNKNOWN
-domain: UNKNOWN
-vertical: UNKNOWN
+asset_id: WF-CORE
+name: Athena Web Factory Core
+domain: null
+vertical: null
 status: planned
-created_at: 2026-09-08T00:00:00Z
+created_at: 2026-09-08T12:11:55Z
 
 domain:
   approved_at: null
@@ -18,11 +18,11 @@ domain:
 repository:
   provider: github
   full_name: elgaross-pixel/athena-web-factory
-  created_at: 2026-09-08T00:00:00Z
-  first_commit_at: null
+  created_at: 2026-09-08T12:11:55Z
+  first_commit_at: 2026-09-08T12:11:55Z
 
 deployment:
-  provider: unknown
+  provider: null
   production_url: null
   first_deployment_at: null
   custom_domain_connected_at: null
