@@ -1,9 +1,10 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { siteConfig } from './site.config';
 
 export default defineConfig({
-  site: 'https://example.invalid',
+  site: siteConfig.site.url,
   output: 'static',
-  trailingSlash: 'always',
+  trailingSlash: siteConfig.seo.trailingSlash,
   integrations: [sitemap()],
 });
