@@ -1,3 +1,4 @@
+schema_version: 1
 asset_id: WF-A002
 name: UNKNOWN
 domain: UNKNOWN
@@ -5,14 +6,49 @@ vertical: UNKNOWN
 status: planned
 created_at: 2026-09-08T00:00:00Z
 
-infrastructure:
-  framework: astro
-  hosting: unknown
-  source_of_truth: git
+domain:
+  approved_at: null
+  registered_at: null
+  registration_cost: null
+  registration_currency: null
+  renewal_cost: null
+  renewal_currency: null
+  registrar: null
+
+repository:
+  provider: github
+  full_name: elgaross-pixel/athena-web-factory
+  created_at: 2026-09-08T00:00:00Z
+  first_commit_at: null
+
+deployment:
+  provider: unknown
+  production_url: null
+  first_deployment_at: null
+  custom_domain_connected_at: null
+  ssl_active_at: null
 
 measurement:
   analytics_provider: none
-  gsc_verified: false
+  analytics_connected_at: null
+  gsc_verified_at: null
+  sitemap_submitted_at: null
+  first_crawl_discovered_at: null
+  first_indexed_url: null
+  first_indexed_at: null
+  first_impression_at: null
+  first_organic_click_at: null
+  first_organic_visit_at: null
 
 commercial:
   affiliate_programs: []
+  first_affiliate_click_at: null
+  first_conversion_at: null
+  first_revenue_at: null
+  revenue_currency: null
+
+experiment:
+  assigned: false
+  lab: null
+  experiment_id: null
+  freeze_required: false
